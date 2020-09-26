@@ -9,7 +9,7 @@ public class Wall implements Obstacle {
     }
 
     @Override
-    public void overcome(RunJamp runJamp) {
-        runJamp.jump(size, obstacleName);
+    public boolean overcome(RunJamp runJamp) {
+        return runJamp.jump(size, obstacleName);
     }
 }

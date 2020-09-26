@@ -1,5 +1,10 @@
 package com.company;
 
 public interface Obstacle {
-    void overcome(RunJamp runJamp);
+    /**
+     * Функция преодорления препятствия
+     * @param runJamp участник, который преодолевает препятствия
+     * @return boolean результат преодоления препятствия
+     */
+    boolean overcome(RunJamp runJamp);
 }

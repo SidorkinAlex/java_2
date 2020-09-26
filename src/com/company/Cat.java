@@ -22,10 +22,10 @@ public class Cat implements RunJamp {
     @Override
     public boolean run(int size, String obstacleName) {
         if (size <= limitRun) {
-            System.out.println("Robot ran on the " + obstacleName + size + " meters long");
+            System.out.println("Robot ran on the " + obstacleName + " " + size + " meters long");
             return true;
         }
-        System.out.println("Robot could not run along a " + obstacleName + size + " meters long");
+        System.out.println("Robot could not run along a " + obstacleName + " " + size + " meters long");
         return false;
     }
 }

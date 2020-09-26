@@ -5,11 +5,11 @@ public class Treadmill implements Obstacle {
     public String obstacleName = "Treadmill";
 
     public Treadmill() {
-        size = (int) (Math.random() * 60);
+        size = (int) (Math.random() * 510);
     }
 
     @Override
-    public void overcome(RunJamp runJamp) {
-        runJamp.run(size, obstacleName);
+    public boolean overcome(RunJamp runJamp) {
+        return runJamp.run(size, obstacleName);
     }
 }
